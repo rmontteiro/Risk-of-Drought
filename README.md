@@ -30,6 +30,15 @@ O índice é adimensional e não representa uma probabilidade de seca. Não há 
 - Definição do recorte, período analisado e referência histórica. O ano atual está fixado em **2026** nos scripts.
 - Permissão de exportação ao Google Drive e espaço disponível. A transferência da pasta temporária para a pasta final exige automação externa não incluída.
 
+## Acesso aos assets vetoriais
+
+| Layer | Abrir no Earth Engine | Uso |
+|---|---|---|
+| Municípios do Espírito Santo | [MUNICIPIOS_ES](https://code.earthengine.google.com/?asset=projects/ee-aguascapixabas/assets/MUNICIPIOS_ES) | Recorte estadual e análise municipal; campo `nome` no DRIM |
+| Bacias hidrográficas | [bacias_hidrograficas_AGERH](https://code.earthengine.google.com/?asset=projects/ee-aguascapixabas/assets/bacias_hidrograficas_AGERH) | Análise por bacias; campo `nom_regiao` no DRIW |
+
+Os links abrem os assets no Code Editor do GEE. É necessário entrar com uma conta habilitada para o Earth Engine. O acesso depende das permissões de compartilhamento de cada asset; disponibilizar o link não altera essas permissões nem autentica este ambiente. A leitura dos assets por estes links não foi verificada nesta atualização.
+
 ## Execução
 
 1. Abra um dos arquivos de `earth-engine/` no Code Editor e execute-o separadamente. Não é uma aplicação Node.js nem requer `npm install`.

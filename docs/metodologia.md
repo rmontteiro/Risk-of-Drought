@@ -16,6 +16,15 @@ As aplicações permitem uma análise estadual com resumo por unidade ou uma an�
 | Municípios | `projects/ee-aguascapixabas/assets/MUNICIPIOS_ES` | `nome` no DRIM | Recorte estadual e unidades municipais |
 | Bacias | `projects/ee-aguascapixabas/assets/bacias_hidrograficas_AGERH` | `nom_regiao` | Unidades de resumo do DRIW |
 
+### Links de acesso aos layers
+
+| Layer | Abrir no Earth Engine | Uso |
+|---|---|---|
+| Municípios do Espírito Santo | [MUNICIPIOS_ES](https://code.earthengine.google.com/?asset=projects/ee-aguascapixabas/assets/MUNICIPIOS_ES) | Recorte estadual e análise municipal; campo `nome` no DRIM |
+| Bacias hidrográficas | [bacias_hidrograficas_AGERH](https://code.earthengine.google.com/?asset=projects/ee-aguascapixabas/assets/bacias_hidrograficas_AGERH) | Análise por bacias; campo `nom_regiao` no DRIW |
+
+Os links abrem os assets no Code Editor do GEE. É necessário entrar com uma conta habilitada para o Earth Engine. O acesso depende das permissões de compartilhamento de cada asset; disponibilizar o link não altera essas permissões nem autentica este ambiente. A leitura dos assets por estes links não foi verificada nesta atualização.
+
 Os dados raster são lidos no servidor do GEE; não é necessário fornecer CSV de chuva ou baixar imagens previamente. Os assets vetoriais precisam estar publicados e compartilhados com a identidade executora. Os identificadores dos assets não concedem acesso por si só.
 
 Os campos territoriais devem conter nomes consistentes, não nulos e sem colisões entre unidades distintas. Os scripts obtêm os nomes distintos, ordenam-nos e reúnem as geometrias de feições com o mesmo nome. Isso agrega partes de uma unidade, mas também reúne indevidamente unidades diferentes que tenham o mesmo valor. Os demais atributos originais não são preservados nessa reconstrução.
